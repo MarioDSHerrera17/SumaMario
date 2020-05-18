@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html long="en">
+<head>
+	<meta charset="utf-8">
+	<title>Suma de dos numeros</title>
+	<script type="text/javascript">
+		function Suma()
+	{
+		var num1 = parseFloat(document.getElementById('num1').value);
+		var num2 = parseFloat(document.getElementById('num2').value);
+		var Suma=0;
+		if (!num1 || !num2) 
+		{
+			alert("LLena todos los campos")
+		}
+		else
+		{
+			Suma=num1+num2;
+			alert("Este es el resultado: " + Suma);
+		}
+	}
+	</script>
+</head>
+<body bgcolor="#000000">
+	<p><font face="times new roman" color="white"size="+1">Llena los valores </p>
+		Ingresa un primer número: <input type="text" name="num1" id="num1" >
+		<p></p>
+		Ingresa un segundo número: <input type="text" name="num2" id="num2" >
+		<p></p>
+    <input type="button" name="btn1" value="Suma" onclick="Suma()"></td>
+</body>
+</html>		
